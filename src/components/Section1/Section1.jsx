@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./Section1.scss";
 import Button from "../Button/Button";
 import video from "../../assets/images/s1-img.svg"
+import oval from "../../assets/icons/oval.svg"
+import play from "../../assets/icons/play.svg"
 
 function Section1() {
   const [inputValue, setInputValue] = useState("");
@@ -44,16 +46,16 @@ function Section1() {
 
       <div className="s1-video">
         <img className="video" src={video} alt="" />
-        <img className="oval-1" src="./src/assets/icons/oval.svg" alt="" />
+        <img className="oval-1" src={oval} alt="" />
         <img
           className="oval-2"
           width={256}
-          src="./src/assets/icons/oval.svg"
+          src={oval}
           alt=""
         />
       </div>
       <div className="watch-video">
-        <img src="./src/assets/icons/play.svg" alt="" />
+        <img src={play} alt="" />
         <p>Watch the full video (2 min)</p>
       </div>
 
