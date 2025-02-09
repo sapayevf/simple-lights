@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Section1.scss";
 import Button from "../Button/Button";
+import video from "../../assets/images/s1-img.svg"
 
 function Section1() {
   const [inputValue, setInputValue] = useState("");
@@ -42,7 +43,7 @@ function Section1() {
       </div>
 
       <div className="s1-video">
-        <img className="video" src="./src/assets/images/s1-img.svg" alt="" />
+        <img className="video" src={video} alt="" />
         <img className="oval-1" src="./src/assets/icons/oval.svg" alt="" />
         <img
           className="oval-2"
